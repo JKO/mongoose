@@ -10,8 +10,8 @@ test:
 		$(TESTFLAGS) \
 		$(TESTS)
 
-test-cov:
-	@TESTFLAGS=--cov $(MAKE) test
+home:
+	./node_modules/jade/bin/jade < ./index.jade > ./index.html
 
 docs: docs/api.html
 
